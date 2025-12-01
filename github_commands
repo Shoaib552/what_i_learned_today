@@ -1,0 +1,351 @@
+# A--Z Git & GitHub Commands (Complete Guide)
+
+This document lists the full set of essential **Git & GitHub commands**
+alphabetically from **A to Z**, along with clear descriptions.\
+These are the commands you will use while working with Git locally and
+interacting with GitHub.
+
+------------------------------------------------------------------------
+
+## 🔠 A
+
+### **git add**
+
+Add files to the staging area.
+
+    git add <file>
+
+### **git apply**
+
+Apply a patch file.
+
+    git apply <patch>
+
+### **git archive**
+
+Create a zip/tar archive of your repo.
+
+    git archive --format=zip HEAD > code.zip
+
+------------------------------------------------------------------------
+
+## 🔠 B
+
+### **git bisect**
+
+Binary search to find which commit introduced a bug.
+
+    git bisect start
+
+### **git branch**
+
+Create, list, or delete branches.
+
+    git branch <branch-name>
+
+------------------------------------------------------------------------
+
+## 🔠 C
+
+### **git checkout**
+
+Switch branches or restore files.
+
+    git checkout <branch>
+
+### **git clone**
+
+Clone a GitHub repository.
+
+    git clone <repo-url>
+
+### **git commit**
+
+Save changes to history.
+
+    git commit -m "message"
+
+### **git config**
+
+Set user-level or repo-level configuration.
+
+    git config user.name "Name"
+
+### **git clean**
+
+Remove untracked files.
+
+    git clean -f
+
+### **git cherry-pick**
+
+Apply a commit from another branch.
+
+    git cherry-pick <commit-hash>
+
+------------------------------------------------------------------------
+
+## 🔠 D
+
+### **git diff**
+
+View file changes.
+
+    git diff
+
+### **git difftool**
+
+Open changes in an external diff tool.
+
+    git difftool
+
+------------------------------------------------------------------------
+
+## 🔠 F
+
+### **git fetch**
+
+Download changes from remote without merging.
+
+    git fetch
+
+### **git format-patch**
+
+Create patch files from commits.
+
+    git format-patch -1 HEAD
+
+### **git fsck**
+
+Verify repository integrity.
+
+    git fsck
+
+------------------------------------------------------------------------
+
+## 🔠 G
+
+### **git grep**
+
+Search text in tracked files.
+
+    git grep "<text>"
+
+------------------------------------------------------------------------
+
+## 🔠 H
+
+### **git help**
+
+Get help for any command.
+
+    git help <command>
+
+------------------------------------------------------------------------
+
+## 🔠 I
+
+### **git init**
+
+Initialize a new repository.
+
+    git init
+
+### **.gitignore**
+
+Specify which files to ignore.
+
+    touch .gitignore
+
+------------------------------------------------------------------------
+
+## 🔠 L
+
+### **git log**
+
+View commit history.
+
+    git log
+
+### **git ls-files**
+
+List tracked files.
+
+    git ls-files
+
+------------------------------------------------------------------------
+
+## 🔠 M
+
+### **git merge**
+
+Merge branches.
+
+    git merge <branch>
+
+### **git mv**
+
+Move or rename files.
+
+    git mv old new
+
+------------------------------------------------------------------------
+
+## 🔠 N
+
+### **git notes**
+
+Add notes to commits.
+
+    git notes add -m "text"
+
+------------------------------------------------------------------------
+
+## 🔠 P
+
+### **git pull**
+
+Fetch + merge changes from remote.
+
+    git pull
+
+### **git push**
+
+Upload commits to GitHub.
+
+    git push
+
+### **git prune**
+
+Clean unreachable objects.
+
+    git prune
+
+------------------------------------------------------------------------
+
+## 🔠 R
+
+### **git rebase**
+
+Reapply commits on top of another base.
+
+    git rebase <branch>
+
+### **git remote**
+
+Manage remote repository connections.
+
+    git remote add origin <url>
+
+### **git reset**
+
+Undo commits or restore files.
+
+    git reset --hard
+
+### **git restore**
+
+Restore changed/deleted files.
+
+    git restore <file>
+
+### **git revert**
+
+Create a new commit that undoes a previous commit.
+
+    git revert <commit>
+
+### **git rm**
+
+Remove tracked files.
+
+    git rm <file>
+
+------------------------------------------------------------------------
+
+## 🔠 S
+
+### **git stash**
+
+Temporarily store changes.
+
+    git stash
+
+### **git status**
+
+Show working directory status.
+
+    git status
+
+### **git switch**
+
+Modern branch switch command.
+
+    git switch <branch>
+
+### **git show**
+
+Display a commit or object.
+
+    git show <commit>
+
+### **git submodule**
+
+Manage submodules.
+
+    git submodule add <repo>
+
+------------------------------------------------------------------------
+
+## 🔠 T
+
+### **git tag**
+
+Create/list version tags.
+
+    git tag <tagname>
+
+------------------------------------------------------------------------
+
+## 🔠 U
+
+### **git update-index**
+
+Manually update the staging area.
+
+    git update-index
+
+------------------------------------------------------------------------
+
+## 🔠 V
+
+### **git --version**
+
+Check Git version.
+
+    git --version
+
+------------------------------------------------------------------------
+
+## 🔠 W
+
+### **git worktree**
+
+Use multiple working directories.
+
+    git worktree add <path> <branch>
+
+------------------------------------------------------------------------
+
+## 🔠 Z
+
+There are **no Git commands** starting with Z.
+
+------------------------------------------------------------------------
+
+# 📌 Conclusion
+
+This README contains every essential Git/GitHub command from **A to
+Z**.\
+You can directly use it in your GitHub repository for documentation or
+learning.
