@@ -1,0 +1,269 @@
+Selenium with Python – Complete Guide
+1. Introduction to Selenium
+
+Selenium is an open-source automation tool used for testing web applications across different browsers and platforms. With Selenium, testers can write scripts to interact with web pages automatically.
+
+Selenium supports multiple languages such as Python, Java, JavaScript, C#, and Ruby. In this guide, we focus on Selenium with Python.
+
+2. Selenium Components
+2.1 Selenium WebDriver
+
+WebDriver is a browser automation library that allows Python scripts to control browsers like Chrome, Firefox, Edge, and Safari.
+
+2.2 Selenium IDE
+
+A simple record-and-playback tool mainly used for beginners. Not recommended for advanced automation.
+
+2.3 Selenium Grid
+
+A tool used for executing tests on multiple machines and platforms simultaneously. Ideal for CI/CD and distributed testing.
+
+3. Installation and Setup
+3.1 Install Python
+
+Ensure that Python 3.8 or above is installed:
+
+python --version
+
+3.2 Install Selenium
+
+Install Selenium through pip:
+
+pip install selenium
+
+3.3 Download WebDriver
+
+Each browser requires a WebDriver:
+
+Chrome: ChromeDriver
+
+Firefox: GeckoDriver
+
+Edge: EdgeDriver
+
+WebDriver must match your browser version.
+
+3.4 Basic Directory Structure
+project/
+ └── tests/
+     └── test_sample.py
+
+4. First Selenium Script (Python)
+4.1 Basic Example
+from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.get("https://www.google.com")
+print(driver.title)
+driver.quit()
+
+4.2 Steps Explained
+
+Import Selenium WebDriver.
+
+Create a browser instance.
+
+Open a webpage using get().
+
+Print the page title.
+
+Close the browser.
+
+5. Locating Web Elements
+
+Selenium provides multiple ways to locate elements.
+
+5.1 Locator Types
+
+ID
+
+Name
+
+Class Name
+
+Tag Name
+
+Link Text
+
+Partial Link Text
+
+CSS Selector
+
+XPath
+
+5.2 Example
+element = driver.find_element("id", "username")
+
+6. Working with Web Elements
+6.1 Entering Text
+driver.find_element("id", "email").send_keys("example@gmail.com")
+
+6.2 Clicking Elements
+driver.find_element("id", "login").click()
+
+6.3 Clearing Text Fields
+driver.find_element("id", "email").clear()
+
+6.4 Getting Text from Element
+text = driver.find_element("class name", "title").text
+
+7. Waiting in Selenium
+7.1 Implicit Waits
+driver.implicitly_wait(10)
+
+7.2 Explicit Waits
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+wait = WebDriverWait(driver, 10)
+element = wait.until(EC.visibility_of_element_located((By.ID, "element_id")))
+
+7.3 Why Waits Are Important
+
+Prevents test failures due to slow page loads.
+
+Helps synchronize test execution with browser behavior.
+
+8. Handling Special Web Elements
+8.1 Dropdowns
+from selenium.webdriver.support.ui import Select
+
+select = Select(driver.find_element("id", "country"))
+select.select_by_visible_text("India")
+
+8.2 Radio Buttons and Checkboxes
+driver.find_element("id", "male").click()
+
+8.3 Alerts
+alert = driver.switch_to.alert
+alert.accept()
+
+8.4 Frames
+driver.switch_to.frame("frame1")
+driver.switch_to.default_content()
+
+8.5 Windows and Tabs
+driver.switch_to.window(driver.window_handles[1])
+
+9. Actions Class (Mouse and Keyboard)
+9.1 Mouse Actions
+from selenium.webdriver import ActionChains
+
+actions = ActionChains(driver)
+element = driver.find_element("id", "drag")
+actions.move_to_element(element).perform()
+
+9.2 Drag and Drop
+actions.drag_and_drop(src, dst).perform()
+
+9.3 Keyboard Actions
+from selenium.webdriver.common.keys import Keys
+
+element.send_keys(Keys.ENTER)
+
+10. Taking Screenshots
+driver.save_screenshot("output.png")
+
+11. Handling Cookies
+11.1 Add Cookie
+driver.add_cookie({"name": "token", "value": "123"})
+
+11.2 Get Cookies
+driver.get_cookies()
+
+11.3 Delete All Cookies
+driver.delete_all_cookies()
+
+12. Selenium with PyTest
+12.1 Installing PyTest
+pip install pytest
+
+12.2 Sample PyTest Script
+def test_google_title():
+    driver = webdriver.Chrome()
+    driver.get("https://www.google.com")
+    assert "Google" in driver.title
+    driver.quit()
+
+12.3 Running Tests
+pytest -v
+
+13. Page Object Model (POM)
+13.1 Why Use POM
+
+Increases reusability
+
+Makes code easier to maintain
+
+Separates logic from UI interactions
+
+13.2 Basic POM Structure
+project/
+ ├── pages/
+ │   └── login_page.py
+ └── tests/
+     └── test_login.py
+
+14. Selenium Grid Overview
+14.1 Purpose
+
+Run tests on multiple machines.
+
+Parallel execution.
+
+Supports cross-browser testing.
+
+14.2 Basic Architecture
+
+Hub
+
+Nodes
+
+15. Best Practices
+
+Use explicit waits instead of sleep.
+
+Keep locators in a separate file or POM.
+
+Avoid hardcoding test data.
+
+Use logging for debugging.
+
+Structure tests with PyTest.
+
+Use virtual environments.
+
+Keep WebDriver updated.
+
+16. Troubleshooting Tips
+
+Element not found → Use better locators or waits.
+
+Browser not opening → Check WebDriver path.
+
+Click not working → Element may be hidden; try JavaScript click.
+
+Stale element → Re-locate the element.
+
+17. Useful Selenium Commands (Quick Reference)
+
+driver.get(url)
+
+driver.find_element()
+
+element.click()
+
+element.send_keys()
+
+driver.implicitly_wait()
+
+WebDriverWait
+
+driver.switch_to.frame()
+
+driver.switch_to.alert
+
+driver.save_screenshot()
+
+driver.quit()
