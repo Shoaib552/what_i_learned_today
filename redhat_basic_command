@@ -1,0 +1,213 @@
+# Essential Red Hat Linux Commands (A–Z)
+
+Below is a clean, simple list of **150+ essential Linux commands**, numbered step‑by‑step (1, 2, 3...) for easy learning.
+
+---
+
+## A — Commands
+1. `alias` – Create shortcut for commands  
+2. `awk` – Text processing tool  
+3. `apt` – Package manager (Debian-based, not RHEL but commonly referenced)  
+4. `at` – Schedule a one-time task  
+5. `apropos` – Search commands by description  
+
+## B — Commands
+6. `bash` – GNU Bourne-Again shell  
+7. `basename` – Strip directory from filename  
+8. `bc` – Calculator  
+9. `bg` – Resume job in background  
+10. `blkid` – Identify block devices  
+11. `blockdev` – Manage block device params  
+12. `bootctl` – Boot manager control  
+13. `break` – Stop loop execution  
+
+## C — Commands
+14. `cal` – Display calendar  
+15. `cat` – Show contents of file  
+16. `cd` – Change directory  
+17. `chgrp` – Change group of a file  
+18. `chmod` – Change permissions  
+19. `chown` – Change owner  
+20. `chroot` – Change root directory  
+21. `cksum` – Checksum  
+22. `clear` – Clear terminal  
+23. `cmp` – Compare files  
+24. `comm` – Compare sorted files  
+25. `cp` – Copy file/directory  
+26. `crontab` – Cron job scheduler  
+27. `curl` – Transfer data from URL  
+28. `cut` – Cut columns from file  
+
+## D — Commands
+29. `date` – Show/Set system date  
+30. `df` – Disk usage (filesystem level)  
+31. `diff` – Show differences between files  
+32. `dig` – DNS lookup tool  
+33. `dmesg` – Kernel message buffer  
+34. `dnf` – RHEL package manager  
+35. `du` – Disk usage (directory/file)  
+
+## E — Commands
+36. `echo` – Print text  
+37. `egrep` – Extended grep  
+38. `env` – Environment variables  
+39. `exit` – Exit shell  
+40. `export` – Export environment variable  
+
+## F — Commands
+41. `fdisk` – Partitioning tool  
+42. `fg` – Bring job to foreground  
+43. `find` – Search files  
+44. `firewall-cmd` – Firewalld tool  
+45. `free` – Memory usage  
+46. `fsck` – File system check  
+
+## G — Commands
+47. `groupadd` – Create group  
+48. `groupdel` – Delete group  
+49. `groupmod` – Modify group  
+50. `grep` – Pattern search  
+51. `gunzip` – Unzip gzip file  
+
+## H — Commands
+52. `halt` – Stop machine  
+53. `head` – Show first lines  
+54. `history` – Show command history  
+55. `hostname` – Show hostname  
+
+## I — Commands
+56. `iconv` – Convert text encoding  
+57. `id` – Print user identity  
+58. `ifconfig` – Network interface (older tool)  
+59. `ip` – Modern network config tool  
+60. `iotop` – Monitor disk I/O  
+61. `iptables` – Network firewall  
+
+## J — Commands
+62. `jobs` – Show job list  
+63. `journalctl` – View systemd logs  
+
+## K — Commands
+64. `kill` – Stop processes  
+65. `killall` – Kill processes by name  
+66. `kmod` – Kernel module manager  
+
+## L — Commands
+67. `last` – Login history  
+68. `less` – View file page by page  
+69. `ln` – Create links  
+70. `locate` – Fast file lookup  
+71. `login` – Start session  
+72. `ls` – List files  
+73. `lscpu` – Show CPU info  
+74. `lsblk` – Block device info  
+75. `lsmod` – Kernel module list  
+
+## M — Commands
+76. `make` – Build automation  
+77. `man` – Manual pages  
+78. `mkdir` – Create directory  
+79. `more` – View file page by page  
+80. `mount` – Mount device  
+81. `mv` – Move/rename files  
+
+## N — Commands
+82. `nano` – Editor  
+83. `nc` – Netcat networking tool  
+84. `netstat` – Network connections  
+85. `nmcli` – NetworkManager tool  
+86. `nslookup` – DNS lookup  
+
+## O — Commands
+87. `openssl` – SSL/TLS tool  
+88. `passwd` – Change password  
+89. `ping` – Test connectivity  
+
+## P — Commands
+90. `pkill` – Kill by name  
+91. `ps` – Process status  
+92. `pwd` – Print working directory  
+
+## Q — Commands
+93. `quota` – Disk quota  
+
+## R — Commands
+94. `reboot` – Restart machine  
+95. `rm` – Delete files  
+96. `rmdir` – Delete empty directory  
+97. `rsync` – File sync tool  
+
+## S — Commands
+98. `scp` – Secure copy  
+99. `screen` – Terminal multiplexer  
+100. `sed` – Stream editor  
+101. `semanage` – SELinux management  
+102. `service` – Start/stop services  
+103. `shutdown` – Shutdown machine  
+104. `sleep` – Delay execution  
+105. `sort` – Sort text file  
+106. `ss` – Socket statistics  
+107. `stat` – File info  
+108. `sudo` – Run as superuser  
+109. `systemctl` – systemd manager  
+
+## T — Commands
+110. `tail` – Last lines of file  
+111. `tar` – Archive tool  
+112. `tee` – Output to file & screen  
+113. `top` – CPU/Process monitor  
+114. `touch` – Create empty file  
+115. `tr` – Translate characters  
+116. `tree` – Directory tree  
+117. `tty` – Terminal name  
+
+## U — Commands
+118. `ufw` – Firewall tool (not default RHEL)  
+119. `umount` – Unmount device  
+120. `uname` – System info  
+121. `unzip` – Extract zip files  
+122. `useradd` – Add user  
+123. `userdel` – Delete user  
+124. `usermod` – Modify user  
+
+## V — Commands
+125. `vdir` – Verbose directory listing  
+126. `vi` – Editor  
+127. `vim` – Improved editor  
+128. `vmstat` – System performance  
+
+## W — Commands
+129. `w` – Show logged in users  
+130. `wall` – Broadcast message  
+131. `wc` – Word count  
+132. `wget` – Download files  
+133. `whereis` – Locate command  
+134. `which` – Show command path  
+135. `who` – Logged in users  
+136. `whoami` – Show current user  
+
+## X — Commands
+137. `xdg-open` – Open files (desktop systems)  
+
+## Y — Commands
+138. `yum` – Older RHEL package manager  
+
+## Z — Commands
+139. `zip` – Create zip  
+140. `zcat` – View compressed file  
+141. `zgrep` – Grep inside .gz file  
+142. `zless` – View gz file  
+143. `zsh` – Shell  
+
+---
+
+### ✔ Total Commands: **143 Essential RHEL Commands**
+
+If you want:
+- A PDF version  
+- An extended list (300+ commands)  
+- A beautifully formatted README  
+- Commands grouped by category  
+
+Just tell me.
+
