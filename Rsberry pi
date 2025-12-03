@@ -1,0 +1,71 @@
+# Raspberry Pi Notes
+
+## Introduction
+
+Raspberry Pi is a small, affordable computer designed to help people
+learn programming, electronics, and computing. It looks like a small
+circuit board but works like a normal computer.
+
+## What Raspberry Pi Can Do
+
+-   Run a full operating system
+-   Connect to a monitor, keyboard, and mouse
+-   Browse the internet
+-   Play videos and music
+-   Run programming languages such as Python, JavaScript, and C
+-   Connect sensors, LEDs, motors, and other hardware
+-   Build projects like robots, home automation systems, and servers
+
+## Why Raspberry Pi Is Popular
+
+-   Low cost
+-   Uses very little power
+-   Easy to learn
+-   Supports many programming languages
+-   Large community and documentation
+-   Works well for learning electronics and creating DIY projects
+
+## Important Components
+
+-   CPU for processing
+-   RAM for memory
+-   USB ports for keyboard and mouse
+-   HDMI port for display
+-   GPIO pins for connecting hardware
+-   MicroSD card slot for storage
+-   Power input for running the device
+
+## Operating System
+
+The most common operating system is Raspberry Pi OS. It is simple,
+lightweight, and built for learning.
+
+## Common Uses
+
+-   Home server
+-   Media center
+-   Learning programming
+-   Smart home projects
+-   Robotics
+-   IoT projects
+-   Game emulation
+-   Teaching computing concepts
+
+## GPIO Pins
+
+GPIO pins allow you to control electronic devices. They let Raspberry Pi
+interact with the physical world by sending signals to components like
+LEDs, sensors, and motors.
+
+## Recommended Models
+
+-   Raspberry Pi 4
+-   Raspberry Pi 3 Model B+
+-   Raspberry Pi Zero 2 W for small projects
+
+## Final Summary
+
+Raspberry Pi is a powerful mini-computer used for learning and building
+projects. It is simple to use, flexible, and perfect for programmers,
+students, and hobbyists who want to understand computers or create
+real-world solutions.
