@@ -1,0 +1,356 @@
+MongoDB Complete Notes
+Simple and Beginner Friendly
+1. Introduction to MongoDB
+
+MongoDB is a NoSQL database.
+
+It stores data in JSON-like documents called BSON.
+
+It is schema-less, meaning you do not need to define tables and columns.
+
+MongoDB is designed for high performance, horizontal scalability, and flexible data storage.
+
+2. Key Features
+
+Document-oriented storage.
+
+Flexible schema.
+
+High availability through replication.
+
+Horizontal scalability through sharding.
+
+Powerful querying and aggregation framework.
+
+Built-in data redundancy.
+
+High performance for read and write operations.
+
+3. MongoDB Structure
+
+Database
+A container for collections.
+
+Collection
+Similar to a table, but without fixed structure.
+
+Document
+A single record in MongoDB, stored in BSON.
+
+Field
+Key-value pair inside a document.
+
+_id Field
+A unique identifier for each document.
+
+Example Document:
+
+{
+  "_id": 1,
+  "name": "Shoaib",
+  "age": 25,
+  "skills": ["JavaScript", "React"]
+}
+
+4. Install and Run MongoDB
+
+Install MongoDB from official site.
+
+Start MongoDB server:
+
+mongod
+
+
+Open MongoDB shell:
+
+mongosh
+
+5. Basic MongoDB Commands
+5.1 Database Commands
+
+Show all databases:
+
+show dbs
+
+
+Create or switch database:
+
+use mydb
+
+
+Check current database:
+
+db
+
+5.2 Collection Commands
+
+Show collections:
+
+show collections
+
+
+Create a collection:
+
+db.createCollection("users")
+
+
+Drop a collection:
+
+db.users.drop()
+
+6. CRUD Operations
+6.1 Insert Data
+
+Insert one:
+
+db.users.insertOne({name: "Shoaib", age: 22})
+
+
+Insert many:
+
+db.users.insertMany([
+  {name: "Ali", age: 21},
+  {name: "Sam", age: 23}
+])
+
+6.2 Read Data
+
+Find all:
+
+db.users.find()
+
+
+Find with condition:
+
+db.users.find({age: 22})
+
+
+Find one:
+
+db.users.findOne({name: "Shoaib"})
+
+6.3 Update Data
+
+Update one:
+
+db.users.updateOne(
+  {name: "Shoaib"},
+  {$set: {age: 23}}
+)
+
+
+Update many:
+
+db.users.updateMany(
+  {age: 21},
+  {$set: {status: "active"}}
+)
+
+6.4 Delete Data
+
+Delete one:
+
+db.users.deleteOne({name: "Ali"})
+
+
+Delete many:
+
+db.users.deleteMany({status: "inactive"})
+
+7. Query Operators
+7.1 Comparison Operators
+
+Greater than:
+
+db.users.find({age: {$gt: 20}})
+
+
+Less than:
+
+db.users.find({age: {$lt: 25}})
+
+
+Equal:
+
+db.users.find({age: {$eq: 22}})
+
+7.2 Logical Operators
+
+AND:
+
+db.users.find({age: {$gt: 20}, status: "active"})
+
+
+OR:
+
+db.users.find({
+  $or: [{age: 20}, {age: 25}]
+})
+
+7.3 Projection
+
+Select specific fields:
+
+db.users.find({}, {name: 1, age: 1})
+
+8. Indexes
+
+Indexes improve query performance.
+
+Create index:
+
+db.users.createIndex({name: 1})
+
+
+Show indexes:
+
+db.users.getIndexes()
+
+
+Drop index:
+
+db.users.dropIndex("name_1")
+
+9. Aggregation Framework
+
+Aggregation is used for data processing and analysis.
+
+9.1 Basic Aggregation Example
+db.users.aggregate([
+  {$match: {status: "active"}},
+  {$group: {_id: "$city", total: {$sum: 1}}}
+])
+
+9.2 Common Stages
+
+$match – filter documents
+
+$group – group data
+
+$sort – sort data
+
+$limit – limit results
+
+$project – select fields
+
+10. MongoDB Relationships
+10.1 Embedding (Recommended for simple relations)
+{
+  name: "Shoaib",
+  address: {city: "Delhi", zip: 110001}
+}
+
+10.2 Referencing (Used for complex relations)
+{
+  name: "Shoaib",
+  address_id: ObjectId("...")
+}
+
+11. Replication
+
+Replication creates copies of data across multiple servers.
+
+Ensures high availability.
+
+Uses a primary node and multiple secondary nodes.
+
+Start a replica set:
+
+mongod --replSet "rs0"
+
+
+Initiate replica set:
+
+rs.initiate()
+
+12. Sharding
+
+Sharding is horizontal scaling across multiple servers.
+
+Used for very large data.
+
+Requires:
+
+Config servers
+
+Shard servers
+
+Mongos router
+
+13. Backup and Restore
+
+Backup:
+
+mongodump --db mydb --out backupFolder
+
+
+Restore:
+
+mongorestore backupFolder
+
+14. Schema Design Rules
+
+Embed data when one-to-one or one-to-few.
+
+Reference data when one-to-many or many-to-many.
+
+Choose field names short but meaningful.
+
+Avoid very large documents.
+
+Use indexes carefully.
+
+15. MongoDB Compass
+
+GUI tool for MongoDB.
+
+Allows creating, updating, and viewing data.
+
+Helps visualize indexes and aggregation pipelines.
+
+16. MongoDB with Node.js (Basic Setup)
+
+Install package:
+
+npm install mongodb
+
+
+Connect:
+
+const { MongoClient } = require("mongodb");
+const client = new MongoClient("mongodb://localhost:27017");
+
+
+Insert:
+
+await db.collection("users").insertOne({name: "Shoaib"});
+
+17. Real World Use Cases
+
+Social media platforms
+
+E-commerce product catalogs
+
+Real-time analytics
+
+IoT sensor data
+
+Content management systems
+
+18. Advantages
+
+Fast read and write operations.
+
+Flexible schema.
+
+Scalability across many servers.
+
+Easy to store complex data.
+
+19. Disadvantages
+
+Not ideal for complex joins.
+
+Higher memory usage.
+
+Less strict schema can cause inconsistent data if not handled properly.
