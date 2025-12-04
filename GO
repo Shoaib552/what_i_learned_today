@@ -1,0 +1,348 @@
+1. Introduction to Go
+
+Go is an open-source programming language created by Google in 2009.
+
+It is designed to be simple, fast, and safe for building reliable software.
+
+It combines the performance of lower-level languages with the ease of higher-level languages.
+
+It is mainly used for backend systems, networking tools, cloud applications, DevOps tools, and distributed systems.
+
+2. Main Features of Go
+
+Very fast compilation.
+
+Built-in support for concurrency using goroutines.
+
+Strong and static typing system.
+
+Simple syntax and minimal keywords.
+
+Garbage collection for automatic memory management.
+
+Cross-platform support (Linux, macOS, Windows).
+
+Built-in tooling such as go build, go test, go fmt, and go run.
+
+3. Why Go Is Popular
+
+Easy to learn and write.
+
+Very high performance, close to C.
+
+Excellent for microservices and backend APIs.
+
+Highly optimized for concurrent processing.
+
+Strong standard library with network support.
+
+Backed by Google and widely used in cloud-native applications.
+
+4. Common Use Cases
+
+Backend development for web applications.
+
+REST APIs and microservices.
+
+Cloud platforms, especially Kubernetes-based tools.
+
+Networking services such as proxies and load balancers.
+
+DevOps tools and command-line applications.
+
+High-performance distributed systems.
+
+5. Go Language Setup
+
+Install Go from the official website (https://go.dev/dl
+).
+
+Confirm installation:
+
+go version
+
+
+Set workspace (usually ~/go).
+
+Environment variables used:
+
+GOPATH → workspace
+
+GOROOT → Go installation directory
+
+PATH → add /bin to system path
+
+6. Basic Go Program Structure
+
+Example:
+
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World")
+}
+
+
+Explanation:
+
+package main is the entry package.
+
+import loads other libraries.
+
+main() is the starting function for execution.
+
+Run:
+
+go run main.go
+
+
+Build:
+
+go build main.go
+
+7. Variables and Data Types
+
+Syntax:
+
+var name type = value
+
+
+Example:
+
+var age int = 25
+name := "John"
+isActive := true
+
+
+Common Types:
+
+int
+
+float64
+
+string
+
+bool
+
+rune
+
+byte
+
+arrays
+
+slices
+
+maps
+
+structs
+
+8. Constants
+const PI = 3.14
+const Country string = "India"
+
+9. Control Statements
+If Statement
+if age > 18 {
+    fmt.Println("Adult")
+} else {
+    fmt.Println("Minor")
+}
+
+For Loop
+for i := 0; i < 5; i++ {
+    fmt.Println(i)
+}
+
+Switch
+switch day {
+case 1:
+    fmt.Println("Monday")
+default:
+    fmt.Println("Other Day")
+}
+
+10. Functions
+func add(a int, b int) int {
+    return a + b
+}
+
+
+Multiple return values:
+
+func info() (string, int) {
+    return "John", 25
+}
+
+11. Arrays and Slices
+Array
+var arr = [3]int{1, 2, 3}
+
+Slice
+nums := []int{10, 20, 30}
+
+
+Slices are dynamic and used more than arrays.
+
+12. Maps
+students := map[string]int{
+    "John": 21,
+    "Amit":  22,
+}
+
+13. Structs
+type Person struct {
+    Name string
+    Age  int
+}
+
+p := Person{Name: "Sam", Age: 30}
+
+14. Methods
+func (p Person) greet() {
+    fmt.Println("Hello", p.Name)
+}
+
+15. Interfaces
+type Animal interface {
+    Speak() string
+}
+
+16. Concurrency in Go
+
+Go supports concurrency using goroutines and channels.
+
+Goroutine
+go myFunction()
+
+Channel
+ch := make(chan int)
+ch <- 5
+x := <-ch
+
+17. Packages
+
+Go uses packages to organize code.
+
+Create package:
+
+package utils
+
+
+Use package:
+
+import "myapp/utils"
+
+18. Error Handling
+
+Go does not use exceptions.
+
+value, err := strconv.Atoi("123")
+if err != nil {
+    fmt.Println("Error occurred")
+}
+
+19. File Handling
+data, err := os.ReadFile("test.txt")
+os.WriteFile("output.txt", []byte("Hello"), 0644)
+
+20. Working With Modules
+
+Start a module:
+
+go mod init projectname
+
+
+Download dependencies:
+
+go get package-name
+
+21. Building Web Servers
+
+Using net/http package:
+
+package main
+
+import (
+    "fmt"
+    "net/http"
+)
+
+func handler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintln(w, "Welcome to Go Server")
+}
+
+func main() {
+    http.HandleFunc("/", handler)
+    http.ListenAndServe(":8080", nil)
+}
+
+22. Testing in Go
+go test
+
+
+Example test file math_test.go:
+
+func TestAdd(t *testing.T) {
+    result := Add(2, 3)
+    if result != 5 {
+        t.Errorf("Expected 5, got %v", result)
+    }
+}
+
+23. Go Tools
+
+go fmt → format code
+
+go vet → check errors
+
+go test → run tests
+
+go mod → manage dependencies
+
+go build → build executable
+
+go run → run code
+
+24. Advantages of Go
+
+High performance
+
+Simple and clean syntax
+
+Automatic memory management
+
+Perfect for concurrent systems
+
+Strong tooling
+
+Easy deployment with single binary output
+
+25. Limitations of Go
+
+No generics in older versions
+
+Limited GUI support
+
+Limited package ecosystem compared to JavaScript or Python
+
+Error handling can feel repetitive
+
+26. Companies Using Go
+
+Google
+
+Netflix
+
+Uber
+
+Dropbox
+
+Docker
+
+Kubernetes
+
+Cloudflare
+
+Twitch
