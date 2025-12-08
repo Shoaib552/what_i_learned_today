@@ -1,0 +1,167 @@
+1. What is CAPTCHA?
+
+CAPTCHA stands for Completely Automated Public Turing test to tell Computers and Humans Apart.
+
+It is a security method used on websites to check whether the user is a real human or a bot.
+
+Main purpose: Prevent automated abuse such as spam, fake sign-ups, brute-force attacks, and automated scraping.
+
+2. Why CAPTCHA is Needed?
+
+Stops bots from creating fake accounts.
+
+Prevents bots from scraping sensitive website data.
+
+Protects login systems from password guessing attacks.
+
+Prevents automated form submissions (spam forms).
+
+Helps websites maintain security and server stability.
+
+3. Where CAPTCHA is Used?
+
+Login pages
+
+Registration pages
+
+Forms (contact forms, feedback forms)
+
+Comment sections
+
+Checkout pages
+
+High-security areas of websites
+
+Anywhere bots may try to abuse the system
+
+4. Types of CAPTCHA
+4.1 Text-Based CAPTCHA
+
+Shows distorted letters/numbers.
+
+User must type what they see.
+
+4.2 Image Recognition CAPTCHA
+
+User selects images that match a prompt.
+
+Example: “Select all squares with traffic lights.”
+
+4.3 reCAPTCHA v2 (Checkbox)
+
+The “I’m not a robot” checkbox.
+
+Uses user behavior to decide if they are real.
+
+4.4 Invisible reCAPTCHA
+
+Runs in the background.
+
+No user interaction needed unless suspicious.
+
+4.5 reCAPTCHA v3
+
+Gives a score based on user behavior (0 to 1).
+
+Lower score = likely a bot.
+
+4.6 Audio CAPTCHA
+
+User listens to numbers/words and types them.
+
+4.7 Math CAPTCHA
+
+Simple math questions, e.g., “5 + 7 = ?”
+
+4.8 Slider CAPTCHA
+
+User drags a puzzle piece into the correct place.
+
+5. How CAPTCHA Works?
+
+It gives tasks that are difficult for bots but easy for humans.
+
+Uses behavioral analysis:
+
+Mouse movement
+
+Click speed
+
+Typing pattern
+
+Browser characteristics
+
+IP address reputation
+
+Bot behavior is more predictable and easier to detect.
+
+6. CAPTCHA and Data Scraping
+
+Many websites use CAPTCHA to stop scrapers.
+
+Scraping becomes difficult when CAPTCHA appears frequently.
+
+Bots trigger CAPTCHA due to:
+
+Fast requests
+
+Multiple requests from same IP
+
+No user behavior
+
+Scripted browser actions
+
+7. Techniques Used by Bots to Bypass CAPTCHA (Educational Only)
+
+CAPTCHA-solving services (paid)
+
+AI recognition models
+
+Proxies and human-in-the-loop services
+
+Browser automation tools
+(Note: Actual bypassing on protected websites may violate terms. Always follow the law and policies.)
+
+8. How Websites Detect Bots (CAPTCHA Triggers)
+
+High request frequency
+
+Repeated access from same IP
+
+No mouse/keyboard activity
+
+Scripted browser environment
+
+Suspicious user agents
+
+Countries/IPs with bad reputation
+
+9. CAPTCHA Best Practices for Websites
+
+Use stronger systems like reCAPTCHA v3
+
+Show CAPTCHA only when needed
+
+Combine with rate limiting
+
+Allow alternative for disabled users (audio)
+
+10. Advantages of CAPTCHA
+
+Protects website from bots
+
+Reduces spam
+
+Stops automated attacks
+
+Improves security
+
+11. Disadvantages of CAPTCHA
+
+Can frustrate users
+
+Sometimes difficult to solve
+
+Not accessible for all (visual issues)
+
+Adds friction to user experience
