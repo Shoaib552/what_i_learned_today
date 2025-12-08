@@ -1,0 +1,105 @@
+
+1. What is Scrapy
+
+Scrapy is a fast, open-source web scraping framework written in Python.
+It helps developers extract data from websites, process that data, and store it in different formats.
+
+2. Why Scrapy is Used
+
+To scrape large websites efficiently
+
+To automate web data extraction
+
+To crawl multiple pages quickly
+
+To store extracted data in files or databases
+
+To handle complex scraping tasks such as login, pagination, and dynamic URLs
+
+3. Key Features of Scrapy
+
+High-speed web crawling
+
+Built-in system for handling requests and responses
+
+Automatic data pipelines
+
+Easy handling of links and pagination
+
+Ability to export data in JSON, CSV, or XML
+
+Middleware options to handle cookies, headers, and proxies
+
+Supports asynchronous scraping (makes it extremely fast)
+
+4. How Scrapy Works (Simple Explanation)
+
+You create a "Spider" (a Python class).
+
+The spider visits a website.
+
+It extracts the data you want.
+
+It follows links to other pages if needed.
+
+It saves all the data into a file or database.
+
+5. Main Components in Scrapy
+
+Spider
+
+The main file that defines how to visit pages and what data to extract.
+
+Items
+
+A structured container to store scraped data.
+
+Pipelines
+
+Used to clean, validate, or store data.
+
+Downloader Middleware
+
+Controls requests and responses (for headers, proxies, cookies).
+
+Schedulers
+
+Manages the order of URL requests.
+
+6. Basic Command Workflow
+
+Create a new Scrapy project
+
+scrapy startproject projectname
+
+Create a spider
+
+scrapy genspider spidername example.com
+
+Run the spider
+
+scrapy crawl spidername
+
+Export scraped data
+
+scrapy crawl spidername -o data.json
+
+7. Advantages of Scrapy
+
+Fast and efficient
+
+Supports asynchronous scraping
+
+Easy to scale
+
+Handles complex websites
+
+Large community and documentation
+
+8. Limitations of Scrapy
+
+Not ideal for JavaScript-heavy websites
+
+Requires Python knowledge
+
+Takes time to learn compared to simple libraries like BeautifulSoup
