@@ -1,0 +1,175 @@
+Data Scraping Notes
+1. What is Data Scraping
+
+Data scraping is the process of automatically extracting information from websites or online sources.
+It is commonly used to collect large batches of data for research, analysis, automation, or business intelligence.
+
+2. How Data Scraping Works (Simple Explanation)
+
+A program or script sends a request to a website.
+
+The website returns HTML data.
+
+The scraper reads the HTML and finds specific information you want.
+
+The data is extracted and stored in a structured format such as CSV, JSON, or a database.
+
+The scraper may follow multiple links to collect more data.
+
+3. Methods of Data Scraping
+
+Manual Copying
+
+Very slow, only for small tasks.
+
+Automated Scripts
+
+Uses Python or other languages to automatically extract data.
+
+API Scraping
+
+Uses official APIs provided by websites to get structured data.
+
+Browser Automation
+
+Uses tools like Selenium to control a browser and extract dynamic content.
+
+Headless Browsers
+
+Uses tools like Puppeteer or Playwright to scrape JavaScript-heavy websites.
+
+4. Things Required for Data Scraping
+
+Basic programming knowledge (Python recommended).
+
+Understanding of HTML, CSS, and website structure.
+
+A scraping library such as BeautifulSoup, Scrapy, Selenium, or Puppeteer.
+
+Tools to store data like CSV, JSON, or databases.
+
+A stable internet connection.
+
+Optional: proxies and rotating user agents for avoiding blocks.
+
+5. Important Things to Keep in Mind
+
+Follow website rules
+
+Always check the website’s robots.txt file and terms of service.
+
+Avoid sending too many requests
+
+Use delays between requests to avoid getting blocked.
+
+Use headers and user agents
+
+Helps scraper look like a normal user.
+
+Handle CAPTCHAs
+
+Some websites use CAPTCHAs to block scraping.
+
+Dynamic websites
+
+Websites using JavaScript require tools like Selenium or Puppeteer.
+
+Respect ethical guidelines
+
+Do not scrape private or sensitive user data.
+
+Store data safely
+
+Always clean and validate extracted data.
+
+6. Famous Data Scraping Tools and Libraries
+
+BeautifulSoup (Python)
+
+Great for simple HTML parsing.
+
+Scrapy (Python)
+
+Very fast and powerful scraping framework.
+
+Selenium (Python / JavaScript / others)
+
+Automates browsers and handles dynamic content.
+
+Puppeteer (JavaScript)
+
+Headless Chrome automation.
+
+Playwright (Python / JS)
+
+More modern browser automation tool.
+
+Cheerio (JavaScript)
+
+Fast HTML parser for Node.js.
+
+Octoparse
+
+No-code visual scraper tool.
+
+Apify
+
+Cloud-based scraping and automation platform.
+
+7. Why Data Scraping is Used
+
+To collect product prices and compare markets.
+
+To gather research or academic data.
+
+To automate data collection tasks.
+
+To monitor competitor websites.
+
+To track public information like news or reviews.
+
+To gather large datasets for machine learning.
+
+8. Challenges in Data Scraping
+
+Websites change structure often.
+
+JavaScript-heavy websites are harder to scrape.
+
+IP blocking and rate limiting.
+
+Captchas and anti-bot systems.
+
+Legal and ethical restrictions.
+
+Managing cookies, sessions, and authentication.
+
+9. Best Practices for Data Scraping
+
+Always write scrapers that can handle errors.
+
+Use request delays or throttling.
+
+Use rotating proxies if scraping large-scale data.
+
+Store data in structured formats.
+
+Log every scraping step for debugging.
+
+Use version control for scraper scripts.
+
+10. Example Workflow for a Basic Scraper
+
+Inspect page structure using browser developer tools.
+
+Identify tags or classes that contain required data.
+
+Write script using a library like BeautifulSoup or Scrapy.
+
+Extract fields such as title, price, or links.
+
+Clean the extracted data.
+
+Save it to CSV or a database.
+
+Run the scraper regularly if continuous data is needed.
