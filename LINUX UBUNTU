@@ -1,0 +1,228 @@
+Basic Ubuntu Linux Commands
+1. File and Directory Commands
+
+ls
+
+Lists files and folders in the current directory.
+
+ls -l
+
+Shows detailed list with permissions and size.
+
+ls -a
+
+Shows all files including hidden ones.
+
+pwd
+
+Displays the current working directory path.
+
+cd foldername
+
+Moves into a directory.
+
+cd ..
+
+Moves one step back (to parent folder).
+
+cd /path/to/folder
+
+Moves to a specific path.
+
+mkdir foldername
+
+Creates a new directory.
+
+rmdir foldername
+
+Deletes an empty directory.
+
+rm filename
+
+Deletes a file.
+
+rm -r foldername
+
+Deletes a folder and all its contents.
+
+2. File Handling Commands
+
+touch filename
+
+Creates an empty file.
+
+cp source destination
+
+Copies a file.
+
+cp -r sourcefolder destination
+
+Copies a folder.
+
+mv oldname newname
+
+Renames or moves a file or folder.
+
+cat filename
+
+Displays file content.
+
+nano filename
+
+Opens file in nano text editor.
+
+vim filename
+
+Opens file in vim editor.
+
+3. System and Information Commands
+
+uname -a
+
+Shows system information.
+
+top
+
+Shows running processes.
+
+htop
+
+Improved process viewer (if installed).
+
+df -h
+
+Shows disk usage.
+
+du -sh foldername
+
+Shows size of a folder.
+
+free -h
+
+Shows memory usage.
+
+uptime
+
+Shows system running time.
+
+4. Permissions and Ownership
+
+chmod 755 filename
+
+Changes file permissions.
+
+chmod +x filename
+
+Makes a file executable.
+
+chown user:group filename
+
+Changes file owner.
+
+5. Package Management (APT)
+
+sudo apt update
+
+Updates package list.
+
+sudo apt upgrade
+
+Upgrades all installed packages.
+
+sudo apt install packagename
+
+Installs a package.
+
+sudo apt remove packagename
+
+Removes a package.
+
+sudo apt autoremove
+
+Removes unused dependencies.
+
+6. Network Commands
+
+ping hostname
+
+Checks connectivity.
+
+ifconfig
+
+Shows network configuration (if installed).
+
+ip a
+
+Shows IP address details.
+
+curl url
+
+Fetches data from URL.
+
+wget url
+
+Downloads a file from the internet.
+
+7. User Commands
+
+whoami
+
+Shows current user.
+
+adduser username
+
+Creates a new user.
+
+passwd username
+
+Changes password.
+
+su username
+
+Switches to another user.
+
+8. Archive and Compression Commands
+
+tar -cvf file.tar folder
+
+Creates a tar archive.
+
+tar -xvf file.tar
+
+Extracts a tar archive.
+
+zip file.zip file
+
+Creates a zip file.
+
+unzip file.zip
+
+Extracts zip file.
+
+9. Search and Find Commands
+
+find /path -name "filename"
+
+Searches for a file.
+
+grep "text" filename
+
+Searches for text inside a file.
+
+grep -r "text" folder
+
+Searches text inside a directory.
+
+10. System Control Commands
+
+sudo reboot
+
+Restarts the system.
+
+sudo shutdown now
+
+Shuts down the system immediately.
+
+sudo shutdown -r now
+
+Shuts down and restarts.
