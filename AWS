@@ -1,0 +1,35 @@
+AWS Short Notes .
+
+AWS stands for Amazon Web Services and provides cloud services over the internet.
+
+Cloud computing allows users to use servers, storage, and databases without owning physical hardware.
+
+AWS works on a pay-as-you-go model, meaning you pay only for what you use.
+
+A Region is a physical location where AWS data centers are located.
+
+An Availability Zone is a separate data center inside a region that improves reliability.
+
+EC2 is used to create and run virtual servers in the cloud.
+
+S3 is used to store files like images, videos, documents, and backups.
+
+RDS is a managed database service that supports MySQL, PostgreSQL, and other databases.
+
+IAM is used to manage users, roles, and permissions in AWS.
+
+VPC is a private network created inside AWS for better security.
+
+Load Balancer distributes traffic across multiple servers.
+
+Auto Scaling automatically increases or decreases servers based on load.
+
+CloudWatch is used for monitoring performance, logs, and setting alarms.
+
+Route 53 is used for domain management and DNS routing.
+
+AWS provides strong security using encryption and access control.
+
+AWS Free Tier allows limited free usage for new users.
+
+AWS is popular because it is scalable, reliable, secure, and globally available.
