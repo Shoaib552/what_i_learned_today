@@ -1,0 +1,84 @@
+Simple definition
+
+Caching = saving frequently used data in a fast storage so you don’t have to recompute or fetch it again.
+
+Real-life example
+
+Imagine you go to a coffee shop every day ☕
+
+First time → barista asks your order (slow)
+
+Next time → barista remembers your order (fast)
+
+That “remembering” is caching.
+
+Technical example
+
+Without caching:
+
+User request → Database → Response (slow)
+
+
+With caching:
+
+User request → Cache → Response (fast)
+                 ↓ (if not found)
+               Database
+
+Why caching is important
+
+Faster response time
+
+Less load on database / API
+
+Better user experience
+
+Saves server resources
+
+Common places where caching is used
+1. Browser caching
+
+Images, CSS, JS stored in browser
+
+Page loads faster next time
+
+2. Backend caching
+
+Redis / Memcached
+
+Store DB query results
+
+3. Application-level caching
+
+Cache computed results (reports, analytics)
+
+4. CDN caching
+
+Cloudflare, Akamai
+
+Cache content closer to users
+
+Simple backend example (conceptual)
+Request: Get user profile
+
+Check cache:
+  If exists → return cached data
+  Else → fetch from DB → store in cache → return
+
+Cache expiry (important concept)
+
+Cached data is not permanent.
+
+Examples:
+
+Cache for 5 minutes
+
+Cache until updated
+
+Cache cleared manually
+
+This avoids serving outdated data.
+
+Very common interview line
+
+“Caching trades memory for speed.”
