@@ -1,0 +1,121 @@
+Simple definition
+
+Kubernetes is a container orchestration system that takes care of deployment, scaling, networking, and health of applications — automatically.
+
+Think of it as an operating system for your backend infrastructure.
+
+Real-life analogy
+
+Imagine you have:
+
+1 app
+
+1000 users
+
+Multiple servers
+
+Instead of manually:
+
+Starting apps
+
+Restarting crashed apps
+
+Distributing traffic
+
+Kubernetes does all this for you.
+
+Why Kubernetes is needed
+
+Without Kubernetes:
+
+You run apps manually on servers
+
+Scaling is hard
+
+Downtime when app crashes
+
+With Kubernetes:
+
+Auto-restart failed apps
+
+Auto-scale when traffic increases
+
+Load balancing
+
+Zero-downtime deployments
+
+Core concepts (must know)
+1. Container
+
+A packaged app + dependencies (Docker)
+
+2. Pod
+
+Smallest unit in Kubernetes
+
+Runs one or more containers
+
+3. Node
+
+A machine (VM or physical server)
+
+Runs pods
+
+4. Cluster
+
+Group of nodes
+
+Managed by Kubernetes
+
+5. Deployment
+
+Defines how many copies of your app should run
+
+Handles rolling updates
+
+6. Service
+
+Exposes your app to the network
+
+Load balances traffic
+
+How request flows (simple)
+User → Service → Pod → Container → App
+
+Example scenario
+
+You deploy a web app with:
+
+2 pods initially
+
+Traffic increases
+
+Kubernetes automatically:
+
+Scales to 10 pods
+
+Distributes traffic evenly
+
+Kubernetes vs Docker (important)
+Docker	Kubernetes
+Creates containers	Manages containers
+Runs on one machine	Runs on many machines
+No auto-scaling	Auto-scaling
+Manual restarts	Auto-healing
+
+👉 Docker runs containers
+👉 Kubernetes orchestrates them
+
+Where Kubernetes is used
+
+Large production systems
+
+Microservices architecture
+
+High-traffic apps
+
+Cloud platforms (AWS, GCP, Azure)
+
+Interview one-liner
+
+“Kubernetes automates deployment, scaling, and management of containerized applications.”
