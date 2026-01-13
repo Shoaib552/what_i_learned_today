@@ -1,0 +1,70 @@
+In very simple words
+
+React Native lets you make real mobile apps using React instead of Java/Kotlin or Swift.
+
+You write code once → it runs on both Android and iOS 📱
+
+How it works
+
+You write React-style code
+
+React Native converts it into real native UI components
+
+Result: fast apps that feel like normal mobile apps
+
+ It is not a website inside an app (not WebView).
+
+React vs React Native
+React (Web)	React Native (Mobile)
+Builds websites	Builds mobile apps
+Uses HTML, CSS	Uses native components
+<div> <span>	<View> <Text>
+Runs in browser	Runs on phone
+Example
+React (Web)
+<div>Hello Shoaib</div>
+
+React Native
+import { View, Text } from 'react-native';
+
+<View>
+  <Text>Hello Shoaib</Text>
+</View>
+
+Why use React Native
+
+One codebase for Android + iOS
+
+Uses React concepts (components, hooks)
+
+Large community
+
+Near-native performance
+
+Used by big companies
+
+Facebook
+
+Instagram
+
+Airbnb (partially)
+
+Shopify
+
+When to use React Native
+
+Startup apps
+
+MVPs
+
+Apps that don’t need heavy native features
+
+When NOT to use
+
+Very performance-heavy apps
+
+Games with complex graphics
+
+One-line interview answer:
+
+React Native is a framework that allows developers to build cross-platform mobile apps using React and JavaScript.
