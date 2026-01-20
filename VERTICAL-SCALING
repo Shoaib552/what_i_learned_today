@@ -1,0 +1,37 @@
+Vertical scaling means making one thing stronger, not adding more copies.
+
+Imagine you have one shopkeeper and many customers come.
+
+Instead of adding more shopkeepers, you make the shopkeeper faster and stronger.
+
+You give him more energy so he can serve people quicker.
+
+Still only one shopkeeper, just more powerful.
+
+That is called vertical scaling.
+
+Example in computers:
+
+A website runs on one server.
+
+Many users visit and the server becomes slow.
+
+The company upgrades the same server.
+
+They add more RAM, CPU, or storage.
+
+Now the same server can handle more users.
+
+How companies use it:
+
+Small startups upgrade their server when traffic increases a little.
+
+Banks use powerful servers for databases.
+
+Companies upgrade servers instead of managing many servers.
+
+One-line interview answer:
+
+Vertical scaling means increasing the power of one server by adding more CPU, RAM, or storage.
+
+If you want next:
