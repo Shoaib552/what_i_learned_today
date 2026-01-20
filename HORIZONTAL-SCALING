@@ -1,0 +1,37 @@
+Horizontal scaling means adding more copies of the same thing to handle more work.
+
+Imagine you have one shopkeeper and many customers come.
+
+The shopkeeper becomes slow because too many people are waiting.
+
+So you add more shopkeepers doing the same job.
+
+Now customers are served faster.
+
+You did not make one shopkeeper stronger, you added more shopkeepers.
+
+That is called horizontal scaling.
+
+Example in computers:
+
+A website has one server and many users open it.
+
+The server becomes slow.
+
+The company adds more servers running the same website.
+
+A load balancer sends users to different servers.
+
+Website stays fast even with many users.
+
+How companies use it:
+
+Netflix adds more servers when many people watch movies.
+
+Amazon adds more servers during sales like Big Billion Day.
+
+Uber adds more servers when many people book rides at the same time.
+
+One-line interview answer:
+
+Horizontal scaling means adding more servers or instances to handle more traffic instead of making one server bigger.
