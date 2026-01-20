@@ -1,0 +1,23 @@
+Kubernetes is a tool that takes care of your application.
+
+Your application runs inside small boxes called containers.
+
+Sometimes a container can stop or crash.
+
+Kubernetes keeps checking if containers are running or not.
+
+If one container stops, Kubernetes starts a new one automatically.
+
+If many users open your app, Kubernetes creates more containers.
+
+If users leave, Kubernetes removes extra containers.
+
+You do not need to start or stop containers manually.
+
+Kubernetes does all this work for you automatically.
+
+This keeps your app fast, safe, and always available.
+
+One-line interview answer:
+
+Kubernetes is a tool that manages containers and keeps applications running smoothly.
