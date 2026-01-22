@@ -1,0 +1,103 @@
+⭐ 1. Gin
+
+Most popular Go web framework
+
+Very fast and lightweight
+
+Used for REST APIs and microservices
+
+Easy to learn
+
+⭐ Example use: Backend APIs, dashboards
+
+⭐ 2. Echo
+
+High-performance web framework
+
+Simple routing and middleware
+
+Good for building REST APIs
+
+Clean syntax
+
+⭐ 3. Fiber
+
+Inspired by Express.js (Node.js)
+
+Very fast
+
+Easy for beginners
+
+Great for APIs
+
+⭐ 4. Beego
+
+Full-stack Go framework
+
+MVC architecture
+
+Built-in ORM
+
+Good for large applications
+
+⭐ 5. Buffalo
+
+Rails-like experience in Go
+
+Full-stack framework
+
+Includes routing, templates, assets
+
+Opinionated structure
+
+⭐ 6. Revel
+
+High-productivity framework
+
+MVC style
+
+Hot reload support
+
+Good for traditional web apps
+
+⭐ 7. Chi
+
+Lightweight router (not full framework)
+
+Very flexible
+
+Used for microservices
+
+Minimalistic
+
+⭐ 8. Standard Go (net/http)
+
+Built-in Go HTTP package
+
+No external framework needed
+
+Very powerful
+
+Used in production widely
+
+⭐ 9. When to choose Go frameworks
+
+High-performance backend
+
+Microservices
+
+APIs
+
+Cloud & DevOps systems
+
+⭐ 10. One-line summary
+
+Go frameworks are mainly used for fast, scalable backend services and APIs.
+
+⭐ Quick recommendation
+
+Beginner → Gin / Fiber
+
+Microservices → Chi / Gin
+
+Full-stack → Buffalo / Beego
