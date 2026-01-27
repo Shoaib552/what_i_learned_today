@@ -1,0 +1,21 @@
+Think of RAG (Retrieval-Augmented Generation) as giving an AI an "open-book" exam.
+
+Usually, an AI relies only on what it learned during its initial training (its "memory"). RAG allows the AI to look up specific, fresh information from a trusted source before it answers your question.
+
+How it Works (The Simple Version)
+To understand RAG, imagine you ask a librarian a question about a very specific, new book:
+
+The Query: You ask, "What happens in the sequel released yesterday?"
+
+Retrieval: Instead of guessing, the librarian runs to the shelf, finds the new book, and reads the summary.
+
+Augmentation: They combine what they already know about storytelling with the specific facts they just read.
+
+Generation: They give you a perfect, up-to-date answer.
+
+Why do we need it?
+Standard AI models have two main "human-like" flaws that RAG fixes:
+
+The "Knowledge Cutoff": AI models are frozen in time. If a model finished training in 2024, it doesn't know what happened this morning. RAG gives it a live feed to current data.
+
+Hallucinations: Sometimes AI sounds confident but is actually making things up. RAG forces the AI to base its answer on actual documents you provide, making it much more accurate.
