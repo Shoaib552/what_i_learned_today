@@ -1,0 +1,11 @@
+Supabase = A ready-made backend that stores your app’s data, handles users, and updates things in real-time, so you don’t have to build a server yourself.
+
+Imagine you have a magic barn:
+
+You put your stuff (data) in it — like carrots, hay, or your todo list.
+
+You want your friends (users) to come and take or add stuff. Supabase gives you keys so only the right friends can enter.
+
+Whenever something changes in the barn, everyone can see it instantly — no need to shout or run around.
+
+You don’t have to build the barn yourself, it’s already built, strong, and ready to use.
