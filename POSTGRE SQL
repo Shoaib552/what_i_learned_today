@@ -1,0 +1,22 @@
+PostgreSQL is an open-source SQL database used to store, manage, and retrieve data for applications.
+
+In simple words:
+PostgreSQL is a powerful database that stores data in tables (rows and columns) and helps applications read and write data safely and efficiently.
+
+Easy example
+
+If you build a web app with users, orders, or messages, PostgreSQL stores all that information and makes sure it stays accurate, secure, and fast.
+
+Why developers use PostgreSQL
+
+It is reliable and secure
+
+Handles large amounts of data
+
+Supports complex queries
+
+Works very well with Python, Django, and FastAPI
+
+One-line definition (interview-ready):
+
+PostgreSQL is a reliable relational database that stores structured data and supports complex queries using SQL.
