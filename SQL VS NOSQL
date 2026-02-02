@@ -1,0 +1,54 @@
+SQL vs NoSQL
+
+SQL (Relational Databases)
+
+SQL databases store data in tables with rows and columns, just like an Excel sheet.
+They are best when data is structured and relationships are important.
+
+Examples: PostgreSQL, MySQL, SQL Server, Oracle
+
+NoSQL (Non-Relational Databases)
+
+NoSQL databases store data in a flexible format like JSON documents, key-value pairs, or graphs.
+They are best when data is unstructured or changing frequently.
+
+Examples: MongoDB, Redis, Cassandra, DynamoDB
+
+Key Differences (In Simple Words)
+Feature	SQL	NoSQL
+Data structure	Tables (fixed columns)	Flexible (JSON, key-value, etc.)
+Schema	Fixed schema	Dynamic schema
+Relationships	Strong relationships (joins)	Few or no joins
+Scaling	Vertical (bigger server)	Horizontal (more servers)
+Consistency	Very strong	Often flexible
+Best for	Banking, ERP, CMS	Real-time apps, big data, analytics
+Easy Example
+
+SQL:
+A banking system where data must be accurate and well-structured
+
+NoSQL:
+A chat app or social media app where data changes often and needs to scale fast
+
+When to Use What
+
+Use SQL when:
+
+Data is structured
+
+Relationships matter
+
+Accuracy is critical
+
+Use NoSQL when:
+
+Data structure changes often
+
+High traffic & fast scaling needed
+
+Large volumes of data
+
+One-line summary:
+
+SQL = structured & reliable
+NoSQL = flexible & scalable
