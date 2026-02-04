@@ -197,17 +197,4 @@ Below is a clean, simple list of **150+ essential Linux commands**, numbered ste
 140. `zcat` – View compressed file  
 141. `zgrep` – Grep inside .gz file  
 142. `zless` – View gz file  
-143. `zsh` – Shell  
-
----
-
-### ✔ Total Commands: **143 Essential RHEL Commands**
-
-If you want:
-- A PDF version  
-- An extended list (300+ commands)  
-- A beautifully formatted README  
-- Commands grouped by category  
-
-Just tell me.
-
+143. `zsh` – Shell
