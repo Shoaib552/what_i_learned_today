@@ -1,0 +1,15 @@
+“Kafka is a distributed messaging system used for real-time data streaming. It works with producers and consumers, where producers send data to topics and consumers read from those topics. In Python, we can use the kafka-python library to send and receive messages. It is useful in systems where we need fast and reliable data processing.”
+
+why Kafka?):
+
+“Kafka helps in handling large data, decouples services, and improves performance because systems don’t directly depend on each other.”
+
+
+HINDI 
+
+Kafka ek messaging system hai jo real-time me data ko ek system se dusre system tak bhejne ka kaam karta hai.
+Kafka systems ko loosely coupled banata hai aur high volume data ko efficiently handle karta hai.
+
+Kafka ko LinkedIn ne develop kiya tha.”
+
+“Isko open-source bana diya gaya aur ab Apache Software Foundation maintain karta hai.”
