@@ -1,0 +1,1 @@
+DynamoDB is a fully managed NoSQL database by Amazon that stores data in key-value format. It is highly scalable, fast, and does not require server management. In Python, we can use boto3 to interact with DynamoDB.
