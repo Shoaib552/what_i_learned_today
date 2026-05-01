@@ -1,0 +1,14 @@
+1. Compute (Running code / servers)
+
+These services help you run your application.
+
+Amazon EC2
+→ Rent virtual computers (servers) to run your app.
+AWS Lambda
+→ Run code without managing servers (auto runs when needed).
+Amazon ECS
+→ Run Docker containers easily.
+Amazon EKS
+→ Run Kubernetes (container management system).
+AWS Elastic Beanstalk
+→ Deploy app without worrying about infrastructure.
