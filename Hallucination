@@ -1,0 +1,15 @@
+Hallucination = when an AI gives a wrong or made-up answer but sounds confident
+
+Why hallucination happens
+
+LLMs don’t “know facts” like humans.
+They:
+ Predict next word based on patterns
+
+So sometimes they:
+
+Fill missing info
+Guess
+Combine unrelated data
+
+Hallucination in LLMs is when the model generates incorrect or fabricated information while sounding confident. It happens because models predict text rather than verify facts. We can reduce it using techniques like RAG, better prompting, lowering temperature, and grounding responses with real data sources.
