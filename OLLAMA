@@ -1,0 +1,33 @@
+Ollama is a tool that lets you run AI models (like ChatGPT) directly on your own computer.
+
+Easy Example
+
+Normally:
+
+You send request → OpenAI API → get response (internet needed)
+
+With Ollama:
+
+You send request → your local machine → get response
+
+ मतलब AI आपके ही सिस्टम में चलता है
+
+Why Ollama is Useful?
+ 1. No Internet Needed (after setup)
+Once model is downloaded → works offline
+ 2. Privacy
+Your data stays on your system
+No data goes to external servers
+ 3. Free to Use
+No API cost
+No token billing
+ 4. Fast for local apps
+Especially useful for your projects like:
+Chatbot
+RAG system
+Weather assistant
+ How Ollama Works (Simple Flow)
+Install Ollama
+Download a model (like mistral)
+Run model locally
+Send prompts → get responses
